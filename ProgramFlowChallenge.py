@@ -17,6 +17,7 @@ segment_length = 0
 # Now the next step will be now is to loop through all the characters in the input string IP address and check to see if
 # you've got a full stop or some other character. Below is the code for that -
 
+character = " "
 for character in ipAddress:  # looping through all the characters in the input string IP address
     if character == '.':
         print("segment {} contains {} characters ".format(segment, segment_length))
@@ -24,7 +25,10 @@ for character in ipAddress:  # looping through all the characters in the input s
         segment_length = 0
     else:
         segment_length += 1
-# Ri
 
+# Unless the final character in the string was a . then we haven't the last segment
+
+if character != '.':
+    print("segment {} contains {} characters ".format(segment, segment_length))
 
 
