@@ -1,4 +1,3 @@
 # This is Python Tutorial
 
-`We will cover topic by topic`
-
+`We will cover topic by topic` 
